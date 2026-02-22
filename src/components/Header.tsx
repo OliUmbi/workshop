@@ -4,6 +4,7 @@ import BetterAuthHeader from '../integrations/better-auth/header-user.tsx'
 
 import { useState } from 'react'
 import { Globe, Home, Menu, Network, Store, X } from 'lucide-react'
+import ExamplePopover from "@/components/ExamplePopover.tsx";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,6 +28,7 @@ export default function Header() {
             />
           </Link>
         </h1>
+        <ExamplePopover/>
       </header>
 
       <aside
